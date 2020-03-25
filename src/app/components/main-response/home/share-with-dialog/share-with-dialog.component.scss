@@ -1,0 +1,106 @@
+.new-event-dialog {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: fit-content;
+  line-height: 2em;
+  padding-right: 0.7em;
+  padding-left: 0.7em;
+
+  h1 {
+    display: flex;
+
+    flex-flow: wrap column;
+  }
+  // box-shadow: 0 5px 50px 12px rgba(37, 36, 36, 0.705);
+
+  p {
+    margin-top: 1em;
+    display: flex;
+    flex-flow: wrap column;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    .subcontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 10px 20px;
+      max-width: 19vw ;
+
+      p {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      span {
+        margin-bottom: 10px;
+      }
+
+      .description {
+        word-wrap: break-word;
+        font-size: 1.5em;
+        // border: 1px solid rgba(216, 211, 211, 0.986);
+        // border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .details{
+        font-size: 1.35em;
+      }
+
+
+      .example-viewport {
+        height: 115px;
+        width: 18vw;
+        border: 1px solid rgba(216, 211, 211, 0.986);
+        border-radius: 5px;
+
+        .example-item {
+          height: 35px;
+          padding: 0;
+          margin-bottom: 20px;
+
+          p {
+            font-size: 20px;
+            margin: 0;
+          }
+
+        }
+      }
+    }
+  }
+
+  .submit-button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    border: white 2px solid;
+    background-color: #0a0a0a00;
+
+    border-radius: 50px;
+    box-shadow: 0 4px 14px 4px rgba(24, 23, 23, 0.705);
+    min-width: 100px;
+    cursor: pointer;
+  }
+  .submit-button:hover {
+    background-color: rgb(97, 95, 94);
+  }
+  .submit-button:active {
+    background-color: rgb(156, 54, 35);
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    width: 50%;
+  }
+}

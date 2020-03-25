@@ -1,0 +1,19 @@
+<div class="new-event-dialog">
+  <h1>Share this project with...</h1>
+
+  <div mat-dialog-content class="main-container">
+    <form [formGroup]="shareForm" >
+      <mat-form-field>
+        <mat-label>Users</mat-label>
+        <mat-select formControlName="usersToShareWith" multiple>
+          <mat-option *ngFor="let user of users" [value]="user.id">
+            {{ user.email }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()" class="submit-button">Ok</button>
+  </div>
+</div>

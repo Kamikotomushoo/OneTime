@@ -1,0 +1,12 @@
+<nav>
+  <a class="userName" title="{{ userEmail }}">{{ name }}</a>
+  <a (click)="onLogout()">Logout</a>
+</nav>
+
+<div class="main">
+  <div class="main-body">
+    <div class="outlet">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

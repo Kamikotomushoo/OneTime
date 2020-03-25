@@ -1,0 +1,140 @@
+// @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css");
+
+$color-basic: #e4e4e7;
+$text-basic: #fefefe;
+// $color-notified: #94b6db;
+// $text-notified: #004085;
+// $color-accepted: #5ee78c;
+// $text-accepted: #155724;
+// $color-declined: #c8727a;
+// $text-declined: #721c24;
+$table-header: #595959;
+
+$danger: #f8d7da;
+$info: #afd6ff;
+$success: #a8edb8;
+
+$color-theme: #ca5c50;
+
+.btn-custom {
+  background-color: $color-theme;
+  color: white;
+
+}
+
+.mat-table {
+  margin: 0;
+  table-layout: fixed;
+
+  .mat-row {
+    color: $text-basic;
+    background-color: $color-basic;
+    border-bottom: 2px solid $table-header;
+  }
+
+  .mat-header-cell {
+    background-color: $table-header;
+  }
+}
+
+
+.mat-cell {
+  color: #1b1b1b;
+}
+
+mat-paginator {
+  //color: $text-basic;
+  background-color: $table-header;
+}
+
+::ng-deep .mat-tooltip {
+  font-size: 12px;
+  text-overflow: clip;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.basic-field {
+  color: $text-basic;
+  background-color: $color-basic;
+}
+
+.mat-form-field {
+  font-size: 14px;
+}
+
+th,
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// STYLES FOR ROWS IN TABLE DEPENDS ON STATUS
+.progress {
+  background-color: $info !important;
+}
+
+.done {
+  background-color: $success !important;
+}
+
+
+.report-form{
+  width: 100%;
+  padding: 2vm;
+  background: rgba(0, 0, 0, 0.404);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .mat-form-field{
+    margin: 1vw;
+    width: 8vw;
+
+  }
+
+  .description {
+    width: 16vw;
+  }
+
+  button{
+    margin: 1vw;
+  }
+
+  .edit{
+    margin: 5px;
+    width: 1vw;
+  }
+
+}
+
+
+textarea {
+  color: white;
+}
+
+input {
+  color: white;
+}
+
+.checkbox-margin {
+  margin: 0 10px;
+}
+
+.filter-form{
+  background: rgba(0, 0, 0, 0.404);
+
+
+mat-form-field {
+  margin: 1vw;
+}
+
+button{
+  margin: 1vw;
+}
+}
+span {
+  color: white;
+}
