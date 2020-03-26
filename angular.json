@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "StitchTime": {
+    "OneTime": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/StitchTime",
+            "outputPath": "dist/OneTime",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "StitchTime:build"
+            "browserTarget": "OneTime:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "StitchTime:build:production"
+              "browserTarget": "OneTime:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "StitchTime:build"
+            "browserTarget": "OneTime:build"
           }
         },
         "test": {
@@ -117,16 +117,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "StitchTime:serve"
+            "devServerTarget": "OneTime:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "StitchTime:serve:production"
+              "devServerTarget": "OneTime:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "StitchTime"
+  "defaultProject": "OneTime"
 }

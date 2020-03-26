@@ -8,7 +8,7 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = "StitchTime";
+  title = "OneTime";
 
   constructor(
     private signInUpService: SignInUpService,
