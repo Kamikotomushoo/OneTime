@@ -10,14 +10,10 @@ import { ActivatedRoute } from "@angular/router";
 export class AppComponent implements OnInit, OnDestroy {
   title = "OneTime";
 
-  constructor(
-    private signInUpService: SignInUpService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private signInUpService: SignInUpService) {}
 
   ngOnInit() {
     this.signInUpService.autoLogin();
-    // localStorage.setItem("redirectPath", JSON.stringify(this.route.pathFromRoot));
   }
 
   ngOnDestroy() {
